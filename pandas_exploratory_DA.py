@@ -106,24 +106,3 @@ df.select_dtypes(include="float64")
 df.select_dtypes(include="int64")
 df.select_dtypes(include=["int64", "object"])
 
-
-# Additional Possible Steps:
-
-# Step A1: Filter the DataFrame to show only the countries with a population greater than 100 million,
-# sort by the "2022 Population" column in descending order
-# df[df["2022 Population"] > 100_000_000].sort_values(by="2022 Population", ascending=False)
-
-
-# Step A2: Change the data type of the "2022 Population" column to integer
-# df["2022 Population"] = df["2022 Population"].fillna(0)  # Fill missing values with 0
-# df["2022 Population"] = df["2022 Population"].astype(int)
-
-
-# Step A3: Format the DataFrame output
-# dff = df.style.highlight_null(color="grey")
-# dff = df.style.set_properties(**{"background-color": "black", "color": "lawngreen", "border": "1px solid white"})
-
-# df.style.format(na_rep="missing", thousands=",", precision=0)
-
-# formatted_df = df.style.format(na_rep="missing", thousands=",", precision=0)
-# df.style.format(na_rep="missing", thousands=",", precision=0, subset=["2022 Population"])
