@@ -46,7 +46,6 @@ today = datetime.today()
 # Method Nr. 1: "Classical" approach
 # **********************************
 
-
 # Function to calculate age
 def calculate_age(birthdate):
     if today < birthdate:
